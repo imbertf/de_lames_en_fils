@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $color4;
+    font-family: "Uncut Sans", sans-serif;
+}
+
+html {
+    background-color: $color1;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 50px;
+    @media screen and (max-width: 780px) {
+        padding: 0 10px;
+    }
+}
