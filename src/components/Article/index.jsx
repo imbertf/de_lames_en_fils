@@ -2,7 +2,7 @@ import React from "react";
 
 const Article = ({ title, text, picture, alt }) => {
     return (
-        <div className="articleContent">
+        <article className="articleContent">
             <div className="articleContent-txt">
                 <h3>{title}</h3>
                 <p className="css-fix">{text}</p>
@@ -10,7 +10,7 @@ const Article = ({ title, text, picture, alt }) => {
             <div className="articleContent-img">
                 <img src={picture} alt={alt} />
             </div>
-        </div>
+        </article>
     );
 };
 

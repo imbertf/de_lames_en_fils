@@ -35,11 +35,11 @@ const Navbar = () => {
                     <Link to="/" className="navbar-item">
                         Accueil
                     </Link>
-                    <Link to="/produits" className="navbar-item">
-                        Produits
+                    <Link to="/creations" className="navbar-item">
+                        Créations
                     </Link>
                     <Link to="/stage" className="navbar-item">
-                        Stage
+                        Stages
                     </Link>
                     <Link to="/contact" className="navbar-item">
                         Contact

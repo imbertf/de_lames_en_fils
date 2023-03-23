@@ -2,8 +2,8 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "./pages/home";
 import Products from "./pages/products";
-// import Pollux from "./pages/products/pollux";
-// import Aperitif from "./pages/products/aperitif";
+import Pollux from "./pages/products/pollux";
+import Apero from "./pages/products/apero";
 import Stage from "./pages/stage";
 // import Interns from "./pages/interns";
 import Contact from "./pages/contact";
@@ -16,8 +16,8 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/creations" element={<Products />} />
-                {/* <Route path="/pollux" element={<Pollux />} /> */}
-                {/* <Route path="/aperitif" element={<Aperitif />} /> */}
+                <Route path="/pollux" element={<Pollux />} />
+                <Route path="/apero" element={<Apero />} />
                 <Route path="/stages" element={<Stage />} />
                 {/* <Route path="/stagiaires" element={<Interns />} /> */}
                 <Route path="/contact" element={<Contact />} />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Article from "../../components/Article";
-import Card from "../../components/Card";
+import Card from "../../components/Cards";
 import ContactMe from "../../components/ContactForm";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
@@ -9,8 +9,8 @@ import Header from "../../components/Header";
 const Home = () => {
     return (
         <>
-            <Header />
-            <div className="cardWrapper">
+            <Header picture={"./medias/images/couteaux/couteau2-filter.jpg"} />
+            <section className="cardWrapper">
                 <Link to="/creations" className="cardWrapper-links">
                     <Card
                         picture={`/medias/images/atelier/atelier4.jpg`}
@@ -32,7 +32,7 @@ const Home = () => {
                         text="Contact"
                     />
                 </Link>
-            </div>
+            </section>
             <Article
                 title={"Adrien Guillot"}
                 text={`Grenoblois depuis toujours, attaché a notre belle région et à ses paysages, je me suis permis de la quitter quelques temps afin d’assouvir mes rêves d’aéronautique militaire. Après une expérience en tant que moniteur dans l’armée de l’air, me voici de retour dans le bassin grenoblois.

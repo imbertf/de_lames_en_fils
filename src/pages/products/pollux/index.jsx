@@ -1,7 +1,14 @@
 import React from "react";
+import Footer from "../../../components/Footer";
+import Header from "../../../components/Header";
 
 const Pollux = () => {
-    return <div>Pollux page</div>;
+    return (
+        <>
+            <Header picture={""} />
+            <Footer />
+        </>
+    );
 };
 
 export default Pollux;

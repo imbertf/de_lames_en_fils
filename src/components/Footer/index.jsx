@@ -6,7 +6,6 @@ import {
     SlSocialFacebook,
     SlPhone,
     SlEnvolope,
-    SlEnvelopeOpen,
 } from "react-icons/sl";
 
 function onEmailClick() {

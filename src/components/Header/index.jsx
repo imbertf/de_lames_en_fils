@@ -2,14 +2,11 @@ import React from "react";
 import Logo from "../Logo";
 import Navbar from "../NavBar";
 
-const Header = () => {
+const Header = ({ picture }) => {
     return (
         <header className="header">
             <div className="header-bgContent">
-                <img
-                    src="./medias/images/couteaux/couteau2-filter.jpg"
-                    alt=""
-                />
+                <img src={picture} alt="bannière" />
             </div>
             <div className="header-navigation">
                 <Logo />
