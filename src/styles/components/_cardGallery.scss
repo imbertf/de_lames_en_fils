@@ -6,6 +6,10 @@
     border-radius: 5px;
     opacity: 0.9;
     box-shadow: 0 0 7px 1px $color1;
+    &:hover {
+        transition: 350ms ease;
+        transform: scale(1.03);
+    }
     @media screen and (max-width: 780px) {
         width: auto;
         height: auto;

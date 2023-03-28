@@ -22,7 +22,7 @@ const Home = () => {
                     <Card
                         picture={`/medias/images/stages/stage24-filter.jpg`}
                         alt="Carte contact"
-                        text="Stage"
+                        text="Stages"
                     />
                 </Link>
                 <Link to="/contact" className="cardWrapper-links">
@@ -41,7 +41,7 @@ const Home = () => {
                 
                 La rigueur et le gout de l’effort inculqués par l’armée et le gout de la transmission et le plaisir de créer se concrétisent en 2019 avec la création de De Lames En Fils. L’envie de vivre de nouveau guidé par le cœur, je souhaite travailler de mes mains et en permanence créer, développer et penser a de nouveaux projets.
                 
-                Après un nombre certain de couteaux confectionnés et d’échanges avec des clients, amateurs et simples curieux, Je propose maintenant des stages de confections de couteaux ou passionnés et néophites ont la possibilité de venir créer leur couteaux à l’atelier.`}
+                Après un nombre certain de couteaux confectionnés et d’échanges avec des clients, amateurs et simples curieux, Je propose maintenant des stages de confections de couteaux ou passionnés et néophytes ont la possibilité de venir créer leur couteaux à l’atelier.`}
                 picture={"./medias/images/atelier/atelier12.jpg"}
                 alt={"Adrien"}
             />

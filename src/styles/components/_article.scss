@@ -1,5 +1,4 @@
 .articleContent {
-    height: 500px;
     display: flex;
     flex-direction: row;
     margin-bottom: 3rem;
@@ -31,7 +30,7 @@
 
     &-img {
         width: 50%;
-        height: 100%;
+        max-height: 640px;
         border-radius: 5px;
         overflow: hidden;
         @media screen and (max-width: 780px) {
