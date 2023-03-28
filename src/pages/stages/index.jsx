@@ -7,10 +7,12 @@ import Tag from "../../components/Tag";
 
 const Stages = () => {
     const pictures = data.stages;
-
     return (
         <>
-            <Header picture={"/medias/images/stages/stage7.jpg"} />
+            <Header
+                picture={"/medias/images/stages/stage46.jpg"}
+                style={{ objectPosition: "top" }}
+            />
             <section className="stagesContent">
                 <div className="stagesContent-txt">
                     <div className="stagesContent-title">
