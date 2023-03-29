@@ -1,0 +1,28 @@
+.scroll-top-button {
+    width: 40px;
+    background: white;
+    display: flex;
+    height: 30px;
+    border-radius: 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    @media only screen and (max-width: 768px) {
+        bottom: 80px;
+        right: 10px;
+    }
+
+    path {
+        color: $color6;
+    }
+
+    &:hover {
+        opacity: 1;
+    }
+}

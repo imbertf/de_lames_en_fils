@@ -13,19 +13,23 @@ const Stages = () => {
                 picture={"/medias/images/stages/stage46.jpg"}
                 style={{ objectPosition: "top" }}
             />
-            <section className="stagesContent">
-                <div className="stagesContent-txt">
-                    <div className="stagesContent-title">
+            <section className="stagesContent" data-aos="fade-up">
+                <div
+                    className="stagesContent-txt"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <div className="stagesContent-title" data-aos="zoom-in">
                         <h1> Dessinez et donnez vie à votre propre couteau </h1>
                     </div>
-                    <p className="stagesContent-p">
-                        Je vous accueille dans mon atelier au Versoud pour vous
-                        aider à réaliser votre couteau de A à Z. <br />
+                    <p className="stagesContent-p" data-aos="zoom-in">
+                        Adrien vous accueille dans son atelier au Versoud pour
+                        vous aider à réaliser votre couteau de A à Z. <br />
                         <br /> Vous découvrirez les différentes étapes de
                         création d'un couteau par enlèvement de matière : <br />
                         <br />
                     </p>
-                    <div className="tagContent">
+                    <div className="tagContent" data-aos="zoom-in">
                         <Tag texte={"Choix de l'acier"} className={"tag-txt"} />
                         <Tag
                             texte={"Détourage et mise en forme de la lame"}
@@ -46,7 +50,7 @@ const Stages = () => {
                         />
                     </div>
 
-                    <p className="stagesContent-p-prices">
+                    <p className="stagesContent-p-prices" data-aos="zoom-in">
                         Adultes, enfants accompagnés, tout le monde est le
                         bienvenu !<br /> Stage sur 2 jours
                         <br />
@@ -56,6 +60,7 @@ const Stages = () => {
                             <Tag
                                 texte={"250 €"}
                                 className={"tag-txt bg-green"}
+                                data-aos="zoom-in"
                             />
                         </span>
                         <span>
@@ -63,17 +68,18 @@ const Stages = () => {
                             <Tag
                                 texte={"300 €"}
                                 className={"tag-txt bg-green"}
+                                data-aos="zoom-in"
                             />
                         </span>
                     </p>
                 </div>
             </section>
-            <div className="title">
+            <div className="title" data-aos="fade-up">
                 <h1>Nos stagiaires</h1>
             </div>
-            <section className="galleryWrapper">
+            <section className="galleryWrapper" data-aos="fade-up">
                 {pictures.map((element, index) => (
-                    <ul key={`${element}-${index}`}>
+                    <ul key={`${element}-${index}`} data-aos="zoom-in">
                         <li>
                             <CardGallery picture={element} />
                         </li>

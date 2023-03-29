@@ -12,11 +12,11 @@ const Products = () => {
     return (
         <>
             <Header picture={"/medias/images/atelier/atelier12.jpg"} />
-            <div className="title">
+            <div className="title" data-aos="fade-up">
                 <h1>L'expérience d'un savoir-faire exceptionnel</h1>
             </div>
             <section className="cardWrapper spaceEvenly marginBottom">
-                <div className="products-linkWrapper">
+                <div className="products-linkWrapper" data-aos="fade-up">
                     <Link to="/pollux" className="cardWrapper-links">
                         <Card
                             picture={`/medias/images/pollux/pollux12.jpg`}
@@ -28,7 +28,7 @@ const Products = () => {
                         ...inspiré de la pale du fameux C-160 Transall
                     </p>
                 </div>
-                <div className="products-linkWrapper">
+                <div className="products-linkWrapper" data-aos="fade-up">
                     <Link to="/apero" className="cardWrapper-links">
                         <Card
                             picture={`/medias/images/apero/apero3.jpg`}
@@ -42,36 +42,34 @@ const Products = () => {
                     </p>
                 </div>
             </section>
-            <div className="title">
+            <div className="title" data-aos="fade-up">
                 <h2>
-                    Découvrez l'art de l'artisanat avec nos couteaux faits à la
+                    Découvrez l'art de la coutellerie avec des couteaux fait
                     main : des pièces uniques à la fois belles et fonctionnelles
                     !
                 </h2>
             </div>
-            <p className="txt">
-                Chez <span className="txt-highlight">De Lames en Fils</span>,
-                nous croyons que les couteaux sont plus que de simples outils -
-                ils sont une expression de l'art et des compétences. C'est
-                pourquoi chacun de nos couteaux est fabriqué à la main avec le
-                plus grand soin et une attention particulière aux détails,
-                garantissant que chaque pièce est non seulement belle, mais
-                aussi très fonctionnelle. Des designs classiques aux
-                rebondissements modernes, notre collection de couteaux faits
-                maison met en valeur la polyvalence de cet outil intemporel. Que
-                vous soyez un collectionneur ou un chef, nos couteaux
-                impressionneront à coup sûr par leur savoir-faire exquis et
-                leurs lames tranchantes et précises. Explorez notre galerie de
+            <p className="txt" data-aos="fade-up">
+                Je suis persuadé que les couteaux sont plus que de simples
+                outils - ils sont une expression de l'art et des compétences.
+                C'est pourquoi chacun de mes couteaux sont fabriqués à la main
+                avec le plus grand soin et une attention particulière aux
+                détails. Chaque pièce est non seulement belle, mais aussi très
+                fonctionnelle. Des designs classiques aux plus modernes,
+                l'ensemble des couteaux faits maison met en valeur la
+                polyvalence de cet outil intemporel. Que vous soyez
+                collectionneur ou un chef, je m'efforce de tout mettre en œuvre
+                pour que mes couteaux vous plaisent avec leurs manches diverses
+                et leurs lames tranchantes et précises. Explorez la galerie de
                 couteaux faits maison aujourd'hui et découvrez par vous-même la
                 beauté et la fonctionnalité de ces pièces uniques. Chaque
-                couteau est un chef-d'œuvre unique en son genre, fabriqué avec
-                passion et dévouement par nos artisans qualifiés.
+                couteau est une pièce unique en son genre, fabriqué avec passion
+                et dévouement.
             </p>
-
-            <section className="galleryWrapper">
+            <section className="galleryWrapper" data-aos="fade-right">
                 {pictures.map((element, index) => (
                     <ul key={`${element}-${index}`}>
-                        <li>
+                        <li data-aos="zoom-in">
                             <CardGallery picture={element} />
                         </li>
                     </ul>

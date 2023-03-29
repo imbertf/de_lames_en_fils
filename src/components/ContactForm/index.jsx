@@ -36,17 +36,17 @@ const ContactForm = () => {
     }
 
     return (
-        <div className="formContent">
+        <div className="formContent" data-aos="fade-up">
             <form
                 action={FORM_ENDPOINT}
                 onSubmit={handleSubmit}
                 method="POST"
                 target="_blank"
             >
-                <div>
+                <div data-aos="fade-up">
                     <input type="text" placeholder="Nom" name="name" required />
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <input
                         type="email"
                         placeholder="Email"
@@ -54,14 +54,14 @@ const ContactForm = () => {
                         required
                     />
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <textarea
                         placeholder="Votre message"
                         name="message"
                         required
                     />
                 </div>
-                <div>
+                <div data-aos="fade-up">
                     <Button type={"submit"} text={"Envoyer"} />
                 </div>
             </form>

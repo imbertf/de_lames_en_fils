@@ -11,12 +11,12 @@ const Pollux = () => {
     return (
         <>
             <Header picture={"/medias/images/pollux/pollux1-filter.jpg"} />
-            <div className="title">
+            <div className="title" data-aos="fade-up">
                 <h1 className="">Couteau le Pollux</h1>
             </div>
             <Article
                 title={"L'ésthétisme issue de l'aviation de transport"}
-                text={`Depuis le début de mon activité, j’ai toujours cherché à créer un couteau aliant deux pans importants de ma vie. Après multiples idées avortées, griffonnages divers et variés, voici LE POLLUX. 
+                text={`Depuis le début de mon activité, j’ai toujours cherché à créer un couteau alliant deux pans importants de ma vie. Après multiples idées avortées, griffonnages divers et variés, voici LE POLLUX.
 
                 Un couteau de table ayant un manche inspiré de la pale du fameux C-160 Transall. Ma petite façon de le célébrer à ma manière l'année de son retrait de service après 60 ans à avoir été la bête de somme de l'Armée de l'Air. 
                 
@@ -24,9 +24,9 @@ const Pollux = () => {
                 picture={"/medias/images/pollux/c160.webp"}
                 alt={"C160 Transall"}
             />
-            <section className="galleryWrapper">
+            <section className="galleryWrapper" data-aos="fade-right">
                 {pictures.map((element, index) => (
-                    <ul key={`${element}-${index}`}>
+                    <ul key={`${element}-${index}`} data-aos="zoom-in">
                         <li>
                             <CardGallery picture={element} />
                         </li>

@@ -19,6 +19,11 @@ const Navbar = () => {
                     aria-expanded="false"
                     data-target="navbarMenu"
                     onClick={toggleNavbar}
+                    data-aos="fade-left"
+                    data-aos-anchor="#example-anchor"
+                    data-aos-delay="1200"
+                    data-aos-offset="500"
+                    data-aos-duration="500"
                 >
                     <IoMenuSharp className={isOpen ? "is-inactive" : ""} />
                     <RxCross1 className={isOpen ? "" : "is-inactive"} />
@@ -32,16 +37,48 @@ const Navbar = () => {
                 id="navbarMenu"
             >
                 <div className="navbar-start">
-                    <Link to="/" className="navbar-item">
+                    <Link
+                        to="/"
+                        className="navbar-item"
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-delay="400"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                    >
                         Accueil
                     </Link>
-                    <Link to="/creations" className="navbar-item">
+                    <Link
+                        to="/creations"
+                        className="navbar-item"
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-delay="600"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                    >
                         Créations
                     </Link>
-                    <Link to="/stages" className="navbar-item">
+                    <Link
+                        to="/stages"
+                        className="navbar-item"
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-delay="800"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                    >
                         Stages
                     </Link>
-                    <Link to="/contact" className="navbar-item">
+                    <Link
+                        to="/contact"
+                        className="navbar-item"
+                        data-aos="fade-left"
+                        data-aos-anchor="#example-anchor"
+                        data-aos-delay="1000"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                    >
                         Contact
                     </Link>
                     {/* <Link to="/a-propos" className="navbar-item">

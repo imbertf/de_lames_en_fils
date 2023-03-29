@@ -3,9 +3,13 @@
     margin: 3rem;
     flex-wrap: wrap;
     justify-content: space-between;
-    @media screen and (max-width: 780px) {
+    @media screen and (min-width: 780px) and (max-width: 1200px) {
+        flex-direction: column;
         align-items: center;
+    }
+    @media screen and (max-width: 780px) {
         margin: 3rem 0;
+        align-items: center;
     }
 }
 

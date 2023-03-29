@@ -8,7 +8,10 @@ import Stages from "./pages/stages";
 import Contact from "./pages/contact";
 // import About from "./pages/about";
 import NotFound from "./pages/notFound";
+import ScrollTopButton from "./components/Button/ScrollTopButton";
 import ReactGA from "react-ga";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const TRACKING_ID = "G-DXB8S7CFBS";
 ReactGA.initialize(TRACKING_ID);
@@ -17,6 +20,11 @@ const App = () => {
     useEffect(() => {
         ReactGA.pageview(window.location.pathname + window.location.search);
     }, []);
+
+    useEffect(() => {
+        AOS.init({ duration: 2000 });
+    }, []);
+
     return (
         <BrowserRouter>
             <Routes>
@@ -29,6 +37,7 @@ const App = () => {
                 {/* <Route path="/a-propos" element={<About />} /> */}
                 <Route path="*" element={<NotFound />} />
             </Routes>
+            <ScrollTopButton />
         </BrowserRouter>
     );
 };
