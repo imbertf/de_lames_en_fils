@@ -51,7 +51,11 @@ const Footer = () => {
                 <SlEnvolope onClick={onEmailClick} />
             </div>
             <p>
-                ©️imbertf - <span onClick={showPepiteggs}> 2023 </span> -
+                | Website created by{" "}
+                <span onClick={showPepiteggs} className="showPepiteggs">
+                    ©️imbertf
+                </span>{" "}
+                2023 |
             </p>
             <div className={isOpen ? "is-active" : "is-inactive"}>
                 <div className="pepiteggsContent">

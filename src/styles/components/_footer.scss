@@ -19,6 +19,10 @@
             margin: 30px 0;
             width: auto;
         }
+
+        path {
+            cursor: pointer;
+        }
     }
 
     .pepiteggsContent {
@@ -36,4 +40,9 @@
 
 .is-active {
     display: initial;
+}
+
+.showPepiteggs {
+    color: $color5;
+    cursor: pointer;
 }
