@@ -1,0 +1,100 @@
+.cardWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+    }
+
+    &-links {
+        height: 500px;
+        width: 30%;
+        text-decoration: none;
+        @media screen and (max-width: 780px) {
+            width: 100%;
+            margin-bottom: 3rem;
+        }
+    }
+}
+
+.sectionContent {
+    background: #a99985;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (max-width: 780px) {
+        padding: 0 20px;
+    }
+
+    &-txt {
+        width: 50%;
+        margin: 3rem 0;
+        @media screen and (max-width: 780px) {
+            width: auto;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #252323;
+            font-weight: 100;
+            font-size: 30px;
+            @media screen and (max-width: 780px) {
+                font-size: 20px;
+            }
+        }
+
+        h3 {
+            margin-bottom: 20px;
+            color: $color1;
+        }
+
+        p {
+            font-size: 13px;
+            color: #252323;
+            border: 1px solid #780000;
+            padding: 45px;
+            line-height: 19px;
+            @media screen and (max-width: 780px) {
+                padding: 0;
+                border: none;
+                text-align: justify;
+            }
+        }
+    }
+
+    &-img {
+        width: 80px;
+        height: 80px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: column;
+        @media screen and (max-width: 780px) {
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        svg {
+            margin: 5px 0;
+            cursor: pointer;
+        }
+    }
+}
+
+.flex-direction {
+    flex-direction: row;
+    justify-content: space-evenly;
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

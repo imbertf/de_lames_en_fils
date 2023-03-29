@@ -1,0 +1,16 @@
+button {
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    background: $color1;
+    @media screen and (max-width: 200px) {
+        width: 100%;
+    }
+    &:hover {
+        opacity: 0.8;
+        background: $color3;
+        color: $color2;
+        transition: 0.15s ease;
+    }
+}
